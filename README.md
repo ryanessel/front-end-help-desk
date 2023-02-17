@@ -1,70 +1,59 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hello, thank you for taking the time to look at my quickly made help desk system
 
-## Available Scripts
+Please take a look at the screen shots be low to see how the website works.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Main Page and Customer Submit Form
+![ticktub](./readmepics/Ticket%20Submit%20Form.png "Ticket Submit Form")
+- The customer can submit their issuse on this page; succesful submissions return a succes message
+pic here
+- if any of the boxes are empty you are prompted to fill out all the fields
+pic here
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Logging in and route protection
+![going to log in](./readmepics/Going%20to%20log%20in.png "Going to log in")
+- When you log in the ticket list link appears
 
-### `npm run build`
+![after login](./readmepics/after%20login.png "after login")
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Ticket List Page
+![ticket list](./readmepics/Ticket%20List%20View%20.png "ticket list")
+- You can change the status using the dropdown menu on each line
+- It updates the database the instant a different selection is made
+- Also have colors to correspond to urgency. 
+- clicking the details page will let you send that specific user an email about their ticket
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Send Email page
+![send email](./readmepics/send%20response%20page.png "sending email")
+- If you don't put anything in the response to ticket text area you get an error
+![error](./readmepics/error%20send%20response.png "email error")
+- When you send a message succesfully you get the response like in the picutre below
+![success](./readmepics/sucess%20send%20message.png "email success")
+- Message with email and user's name is sent to browser console.
+![response check](./readmepics/response%20check.png "response check")
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+5. All admin routes are protected and kick you back to the front page with the ticket submission form
+   -Ticket Lists page
+   -Ticket details/email response page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+6. Addiing a new admin use is done by knowing the route extension to type into the browser
+- in this case you just add AdminAddSecretURL to http://localhost:3000/AdminAddSecretURL like so and it will take you to the sign up page
+![Admin User Added](./readmepics/user%20added.png "Admin User Added")
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Thank you for taking the time to look at my help desk example website.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Thank you,
 
-## Learn More
+Ryan Essel
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
