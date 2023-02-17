@@ -42,7 +42,7 @@ pic here
    -Ticket details/email response page
 
 6. Addiing a new admin use is done by knowing the route extension to type into the browser
-- in this case you just add AdminAddSecretURL to http://localhost:3000/AdminAddSecretURL like so and it will take you to the sign up page
+- in this case you just add AdminAddSecretURL to https://front-end-help-desk.onrender.com/AdminAddSecretURL like so and it will take you to the sign up page
 ![Admin User Added](./readmepics/user%20added.png "Admin User Added")
 
 

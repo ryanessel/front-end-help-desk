@@ -43,7 +43,7 @@ export default function AdminAddUser() {
         .post(`${API_URL}/auth/signup`, requestBody)
         .then((response) => {
         setCheckRes(response);
-        setSuccessMessage(<div className='bg-green-400 text-center'>User Succesfully added</div>);
+        setSuccessMessage(<div className='bg-green-400 text-center'>User Succesfully added, you can now log in with that account</div>);
            
         })
         .catch((error) => {
