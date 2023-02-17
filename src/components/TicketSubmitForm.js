@@ -131,8 +131,8 @@ export default function TicketSubmitForm(props) {
 
                     <button className='btn btn-blue' > Submit </button>
 
-                    { (count === 0) && <h3 className="success-message rounded">{successMessage}</h3> }
-                    { (count === 1) && <h3 className="success-message rounded">{failMessage}</h3> }
+                    { (count === 1) && <h3 className="success-message rounded">{successMessage}</h3> }
+                    { (count === 0) && <h3 className="success-message rounded">{failMessage}</h3> }
                 </form>
     
 
