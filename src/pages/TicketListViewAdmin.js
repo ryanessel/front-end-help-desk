@@ -6,7 +6,7 @@ export default function TicketListViewAdmin(props) {
   const [tickets, setAllTickets] = useState([]);
   const [selectedOptions, setSelectedOptions] = useState({});
 
-  const API_URI = "http://localhost:5005/ticket";
+  const API_URI = "https://back-end-help-desk.onrender.com/ticket";
 
   function getAllTickets() {
     axios.get(API_URI)

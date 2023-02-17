@@ -4,7 +4,7 @@ import axios from 'axios';
 
 
 
-const API_URI = "http://localhost:5005/ticket";
+const API_URI = "https://back-end-help-desk.onrender.com/ticket";
 
 const defaultFormFields = {
     name: '',

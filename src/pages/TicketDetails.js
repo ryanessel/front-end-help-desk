@@ -14,7 +14,7 @@ const defaultFormFields = {
 
 export default function TicketDetails() {
     const {ticketId} = useParams();
-    const API_URI = "http://localhost:5005/ticket";
+    const API_URI = "https://back-end-help-desk.onrender.com/ticket";
     const [ targetTicket, setTargetTicket ] = useState("")
     const [formFields, setFormFields] = useState(defaultFormFields);
     const [responseName, setResponseName] = useState("");
