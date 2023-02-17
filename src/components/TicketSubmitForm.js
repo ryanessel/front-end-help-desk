@@ -23,6 +23,7 @@ export default function TicketSubmitForm(props) {
     const [successMessage, setSuccessMessage] = useState(undefined);
     const [failMessage, setFailMessage] = useState(undefined);
     const [messageSwitch, setMessageSwitch] = useState("")
+    const [count, setCount] = useState(2);
 
 
     const handleChange = (event) => {
@@ -43,13 +44,14 @@ export default function TicketSubmitForm(props) {
         console.log("REQUEST BODY", requestBody)
 
         if(requestBody.name === "" || requestBody.email === "" || requestBody.description === "" ) {
+            setCount(0);
             setFailMessage(<div className='bg-red-400 text-center'>Fill out all forms please!</div>);
             return;
         }
 
         axios.post(`${API_URI}`, requestBody)
         .then((response) => {
-        
+            setCount(1);
             setMessageSwitch(response.data);
             console.log("EMAIL RESPONSE!!!!", response)
             setSuccessMessage(<div className='bg-green-400 text-center'>Ticket Sent!</div>);
@@ -129,8 +131,8 @@ export default function TicketSubmitForm(props) {
 
                     <button className='btn btn-blue' > Submit </button>
 
-                    { messageSwitch && <h3 className="success-message rounded">{successMessage}</h3> }
-                    { !messageSwitch && <h3 className="success-message rounded">{failMessage}</h3> }
+                    { (count === 0) && <h3 className="success-message rounded">{successMessage}</h3> }
+                    { (count === 1) && <h3 className="success-message rounded">{failMessage}</h3> }
                 </form>
     
 
