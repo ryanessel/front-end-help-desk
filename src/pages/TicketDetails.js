@@ -36,7 +36,7 @@ export default function TicketDetails() {
 
       e.preventDefault();
 
-      sendMessage();
+     
       resetFormFields();
 
     }
@@ -48,7 +48,7 @@ export default function TicketDetails() {
   };
 
     const getTicketInfo = () => {
-
+      sendMessage();
         axios
         .get(`${API_URI}/${ticketId}`)
         .then((response) => {
