@@ -52,7 +52,7 @@ import AdminLogin from "./AdminLogin";
 
 
 
-    <Link to="/issueTicket" className="text-black font-bold text-xl pr-20" >X Company Help Desk</Link>
+    <Link to="/" className="text-black font-bold text-xl pr-20" >X Company Help Desk</Link>
     
     
     </div>

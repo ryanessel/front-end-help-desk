@@ -14,7 +14,7 @@ function IsPrivate({ children }) {
 
     if(!isLoggedIn) {
 
-        return <Navigate to="/issueTicket" />;
+        return <Navigate to="/" />;
 
     } else {
 
